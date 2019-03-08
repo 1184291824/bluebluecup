@@ -1,0 +1,4 @@
+".\Objects\STARTUP.obj",
+".\Objects\print.obj" 
+TO ".\Objects\responder1" 
+PRINT(".\Listings\responder1.m51") RAMSIZE(256) 
