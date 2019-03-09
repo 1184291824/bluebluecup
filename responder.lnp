@@ -1,0 +1,7 @@
+"STARTUP.obj",
+"lcd1602.obj",
+"main.obj",
+"timer.obj",
+"keyScan.obj" 
+TO "responder" 
+RAMSIZE(256) 
