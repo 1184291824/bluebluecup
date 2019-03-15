@@ -99,9 +99,9 @@ int control_key_scan(void)
 *  返回：被按下的按键值，如果没有按键按下返回0
 **********************************************************************
 */
-int hot_key_scan(u16 flag)
+int hot_key_scan(u16 flag_hot_scan)
 {	
-	if(flag==0) return 0;
+	if(flag_hot_scan==0) return 0;
 	if( hot1 == 0 )
 	{
 		delay10ms();

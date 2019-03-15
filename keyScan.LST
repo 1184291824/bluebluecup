@@ -1,4 +1,4 @@
-C51 COMPILER V9.01   KEYSCAN                                                               03/10/2019 00:58:07 PAGE 1   
+C51 COMPILER V9.01   KEYSCAN                                                               03/15/2019 13:35:34 PAGE 1   
 
 
 C51 COMPILER V9.01, COMPILATION OF MODULE KEYSCAN
@@ -62,7 +62,7 @@ line level    source
   53          {
   54   1              if( key1 == 0 )
   55   1              {
-C51 COMPILER V9.01   KEYSCAN                                                               03/10/2019 00:58:07 PAGE 2   
+C51 COMPILER V9.01   KEYSCAN                                                               03/15/2019 13:35:34 PAGE 2   
 
   56   2                      delay10ms();
   57   2                      if ( key1 == 0 )
@@ -110,9 +110,9 @@ line level    source
   99          *  返回：被按下的按键值，如果没有按键按下返回0
  100          **********************************************************************
  101          */
- 102          int hot_key_scan(u16 flag)
+ 102          int hot_key_scan(u16 flag_hot_scan)
  103          {       
- 104   1              if(flag==0) return 0;
+ 104   1              if(flag_hot_scan==0) return 0;
  105   1              if( hot1 == 0 )
  106   1              {
  107   2                      delay10ms();
@@ -126,7 +126,7 @@ line level    source
  115   1              {
  116   2                      delay10ms();
  117   2                      if ( hot2 == 0 )
-C51 COMPILER V9.01   KEYSCAN                                                               03/10/2019 00:58:07 PAGE 3   
+C51 COMPILER V9.01   KEYSCAN                                                               03/15/2019 13:35:34 PAGE 3   
 
  118   2                      {
  119   3                              return 2;
@@ -190,7 +190,7 @@ line level    source
  177   1              return 0;
  178   1      }
  179          
-C51 COMPILER V9.01   KEYSCAN                                                               03/10/2019 00:58:07 PAGE 4   
+C51 COMPILER V9.01   KEYSCAN                                                               03/15/2019 13:35:34 PAGE 4   
 
  180          
  181          
